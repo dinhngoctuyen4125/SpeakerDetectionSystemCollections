@@ -1,8 +1,8 @@
 ## 1. Add and activate venv
 
 ```bash
-conda create -n prod python=3.11.13
-conda activate prod
+conda create -n spk python=3.11.13
+conda activate spk
 ```
 
 ## 2. Install dependencies

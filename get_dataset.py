@@ -1,7 +1,12 @@
 import os
 import kagglehub
+import argparse
 
-ROOT_DIR = os.getcwd()
+parser = argparse.ArgumentParser()
+parser.add_argument("--datasets", type=str)
+args = parser.parse_args()
+
+ROOT_DIR = os.path.join(os.getcwd(), args.datasets)
 
 DATA_ROOT = kagglehub.dataset_download(
     "tranvannha/vivoice34",
